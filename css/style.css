@@ -395,3 +395,30 @@ select{
     padding: 0;
   }
 }
+
+/* Article Css */
+
+.articles{
+  background: linear-gradient(90deg,#f5a425 0%, #f5a425 30%, #162239f2 30%, #162239f2 100%);
+  position: relative;
+  width: 100%;
+  padding: 40px 100px;
+}
+.articles .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+.articles .title h2{
+  color: #fff;
+  font-weight: 500;
+}
+.mb-2 a{
+  color: white;
+  text-decoration: none;
+}
+.mb-2 a:hover{
+  color: #00000052;
+  text-decoration: underline;
+}
