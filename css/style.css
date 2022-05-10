@@ -1,26 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200,300,400,500,600,700,800,900&display=swap');
-*{
+
+* {
   font-family: 'Poppins', sans-serif;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
-nav{
+
+nav {
   background-color: #162239f2;
   font-family: 16px sans-serif;
   color: #212529;
 }
-.nav-item a{
+
+.nav-item a {
   position: relative;
   color: #fff;
   font-weight: 500;
   text-transform: uppercase;
   padding: 4px 14px;
 }
-.nav-item a:hover{
+
+.nav-item a:hover {
   color: #fff;
 }
-.nav-item a::before{
+
+.nav-item a::before {
   content: "";
   position: absolute;
   display: block;
@@ -32,20 +38,24 @@ nav{
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
-.nav-item a:hover::before{
+
+.nav-item a:hover::before {
   transform: scaleX(1);
 }
-.dropdown-menu{
+
+.dropdown-menu {
   background-color: #162239f2;
   opacity: 0.90;
 }
-section{
+
+section {
   position: relative;
   height: 75vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
 }
+
 section video {
   position: absolute;
   top: 50%;
@@ -60,10 +70,12 @@ section video {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+
 section .container {
   position: relative;
   z-index: 2;
 }
+
 section .overlay {
   position: absolute;
   top: 0;
@@ -74,10 +86,12 @@ section .overlay {
   opacity: 0.5;
   z-index: 1;
 }
-select{
+
+select {
   margin-left: 90px;
 }
-.cbtn{
+
+.cbtn {
   background-color: #162239f2;
   color: #f5a425;
   border-radius: 45px;
@@ -88,13 +102,15 @@ select{
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
-.cbtn:hover{
+
+.cbtn:hover {
   background: #f5a425;
   transform: translateY(-7px);
   color: #162239f2;
   box-shadow: 0px 10px 25px rgba(245, 221, 3, 0.705);
 }
-.mdbtn{
+
+.mdbtn {
   background-color: #162239f2;
   color: #f5a425;
   border-radius: 45px;
@@ -104,16 +120,19 @@ select{
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
-.mdbtn:hover{
+
+.mdbtn:hover {
   background: #f5a425;
   transform: translateY(-7px);
   color: #162239f2;
   box-shadow: 0px 10px 25px rgba(245, 221, 3, 0.705);
 }
-.col-6 a{
+
+.col-6 a {
   color: #f5a425;
 }
-.fdbtn{
+
+.fdbtn {
   color: #f5a425;
   border-radius: 45px;
   cursor: pointer;
@@ -124,21 +143,25 @@ select{
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
-.fdbtn:hover{
+
+.fdbtn:hover {
   background: #f5a425;
   transform: translateY(-7px);
   color: #162239f2;
   box-shadow: 0px 10px 25px rgba(245, 221, 3, 0.705);
 }
-.hov{
+
+.hov {
   letter-spacing: 2px;
   position: relative;
   color: #fff;
 }
-.hov:hover{
+
+.hov:hover {
   color: #fff;
 }
-.hov::before{
+
+.hov::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -149,10 +172,12 @@ select{
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
-.hov:hover::before{
+
+.hov:hover::before {
   transform: scaleX(1);
 }
-.btn-floating{
+
+.btn-floating {
   display: inline-block;
   background: #162239f2;
   border-radius: 30%;
@@ -161,14 +186,17 @@ select{
   overflow: hidden;
   position: relative;
 }
-.btn-floating i{
+
+.btn-floating i {
   transition: 0.2s linear;
 }
-.btn-floating:hover i{
+
+.btn-floating:hover i {
   transform: scale(1.3);
   color: #162239f2;
 }
-.btn-floating::before{
+
+.btn-floating::before {
   content: "";
   position: absolute;
   width: 120%;
@@ -178,65 +206,79 @@ select{
   left: -110%;
   top: 90%;
 }
-.btn-floating:hover::before{
+
+.btn-floating:hover::before {
   animation: aaa 0.7s 1;
   top: -10%;
   left: -10%;
 }
-@keyframes aaa{
- 0%{
+
+@keyframes aaa {
+  0% {
     left: -110%;
     top: 90%;
- }50%{
+  }
+
+  50% {
     left: 10%;
     top: -30%;
- }100%{
-   top: -10%;
-   left: -10%;
- }
+  }
+
+  100% {
+    top: -10%;
+    left: -10%;
+  }
 }
 
 /* Contact Form CSS */
-.contactUs{
-  background: linear-gradient(90deg,#f5a425 0%, #f5a425 30%, #162239f2 30%, #162239f2 100%);
+.contactUs {
+  background: linear-gradient(90deg, #f5a425 0%, #f5a425 30%, #162239f2 30%, #162239f2 100%);
   position: relative;
   width: 100%;
   padding: 40px 100px;
 }
-.contactUs .title{
+
+.contactUs .title {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2em;
 }
-.contactUs .title h2{
+
+.contactUs .title h2 {
   color: #fff;
   font-weight: 500;
 }
-.form{
+
+.form {
   grid-area: form;
 }
-.info{
+
+.info {
   grid-area: info;
 }
-.map{
+
+.map {
   grid-area: map;
 }
-.contact{
+
+.contact {
   padding: 40px;
   background: #fff;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 }
-.box{
+
+.box {
   position: relative;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 5fr 4fr;
-  grid-template-areas: "form info" "form map";
+  grid-template-areas: "form info""form map";
   grid-gap: 20px;
   margin-top: 20px;
 }
-.contact h3{
+
+.contact h3 {
   color: #162239f2;
   font-weight: 500;
   font-size: 1.4em;
@@ -245,36 +287,42 @@ select{
 
 
 /* form */
-.formBox{
+.formBox {
   position: relative;
   width: 100%;
 }
-.formBox .row50{
+
+.formBox .row50 {
   display: flex;
   gap: 20px;
 }
-.inputBox{
+
+.inputBox {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
   width: 50%;
 }
-.formBox .row100 .inputBox{
+
+.formBox .row100 .inputBox {
   width: 100%;
 }
-.inputBox span{
+
+.inputBox span {
   color: #f5a425;
   margin-top: 10px;
   margin-bottom: 5px;
   font-weight: 500;
 }
-.inputBox input{
+
+.inputBox input {
   padding: 10px;
   font-size: 1.1em;
   outline: none;
   border: 1px solid #333;
 }
-.inputBox textarea{
+
+.inputBox textarea {
   padding: 10px;
   font-size: 1.1em;
   outline: none;
@@ -283,7 +331,8 @@ select{
   min-height: 220px;
   margin-bottom: 10px;
 }
-.inputBox input[type="submit"]{
+
+.inputBox input[type="submit"] {
   background: #162239f2;
   color: #fff;
   border-radius: 15px;
@@ -297,28 +346,34 @@ select{
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
-.inputBox input[type="submit"]:hover{
+
+.inputBox input[type="submit"]:hover {
   background: #f5a425;
   transform: translateY(-7px);
   color: #162239f2;
-  box-shadow: 0px 10px 25px rgba(245, 221, 3, 0.705); 
+  box-shadow: 0px 10px 25px rgba(245, 221, 3, 0.705);
 }
-.inputBox ::placeholder{
+
+.inputBox ::placeholder {
   color: #999;
 }
+
 /* info */
-.info{
+.info {
   background: #162239f2;
 }
-.info h3{
+
+.info h3 {
   color: #fff;
 }
-.info .infoBox div{
+
+.info .infoBox div {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-.info .infoBox div span{
+
+.info .infoBox div span {
   min-width: 40px;
   height: 40px;
   color: #fff;
@@ -330,67 +385,82 @@ select{
   border-radius: 50%;
   margin-right: 15px;
 }
-.info .infoBox div p{
+
+.info .infoBox div p {
   color: #fff;
   font-size: 1.1em;
 }
-.info .infoBox div a{
+
+.info .infoBox div a {
   color: #fff;
   text-decoration: none;
   font-size: 1.1em;
 }
-.sci{
+
+.sci {
   margin-top: 40px;
   display: flex;
 }
-.sci li{
+
+.sci li {
   list-style: none;
   margin-right: 15px;
 }
-.sci li a{
+
+.sci li a {
   color: #fff;
   font-size: 2em;
   color: #ccc;
 }
-.sci li a:hover{
+
+.sci li a:hover {
   color: #fff;
 }
-.map{
+
+.map {
   padding: 0;
 }
-.map iframe{
+
+.map iframe {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 991px){
-  .contactUs{
+
+@media (max-width: 991px) {
+  .contactUs {
     background: #f5a425;
   }
-  .contactUs{
+
+  .contactUs {
     padding: 20px;
   }
-  .box{
+
+  .box {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
       "form"
       "info"
       "map";
   }
-  .formBox .row50{
+
+  .formBox .row50 {
     display: flex;
     gap: 0;
     flex-direction: column;
   }
-  .inputBox{
+
+  .inputBox {
     width: 100%;
   }
-  .contact{
+
+  .contact {
     padding: 30px;
   }
-  .map{
+
+  .map {
     min-height: 300px;
     padding: 0;
   }
@@ -398,27 +468,105 @@ select{
 
 /* Article Css */
 
-.articles{
-  background: linear-gradient(90deg,#f5a425 0%, #f5a425 30%, #162239f2 30%, #162239f2 100%);
+.articles {
+  background: linear-gradient(90deg, #f5a425 0%, #f5a425 30%, #162239f2 30%, #162239f2 100%);
   position: relative;
   width: 100%;
   padding: 40px 100px;
 }
-.articles .title{
+
+.articles .title {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2em;
 }
-.articles .title h2{
+
+.articles .title h2 {
   color: #fff;
   font-weight: 500;
 }
-.mb-2 a{
+
+.mb-2 a {
   color: white;
   text-decoration: none;
 }
-.mb-2 a:hover{
+
+.mb-2 a:hover {
   color: #00000052;
   text-decoration: underline;
+}
+
+/* Accordian Css */
+
+
+.accordion .accordion-item {
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  margin-bottom: 10px;
+  background: transparent;
+}
+
+.accordion-header{
+  font-weight: 200;
+}
+.accordion-button{
+  font-size: large;
+  background-color: transparent;
+  color: white;
+
+}
+
+#accordion .panel-title a {
+  display: block;
+  padding: 20px 30px;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+}
+
+#accordion .panel-title a.collapsed {
+  border: none;
+}
+
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  width: 30px;
+  height: 30px;
+  line-height: 27px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  transform: rotate(180deg);
+  transition: all .4s cubic-bezier(0.080, 1.090, 0.320, 1.275);
+}
+
+#accordion .panel-title a.collapsed:before {
+  color: rgba(255, 255, 255, 0.5);
+  transform: rotate(0deg);
+}
+
+.accordion .accordion-body {
+  padding: 20px 30px;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  color: #fff;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: none;
+  border-radius: 5px;
 }
